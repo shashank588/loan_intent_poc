@@ -1,0 +1,45 @@
+# API Keys - Replace with your own keys
+api_keys:
+  openai: "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"
+  groq: "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"
+
+# Model configurations
+models:
+  openai:
+    o4-mini: "gpt-4o-mini"
+    o3: "o3"
+    4o: "gpt-4o"
+  groqcloud:
+    llama-3.3-70b-versatile: "llama-3.3-70b-versatile"
+    deepseek-r1-distill-llama-70b: "deepseek-r1-distill-llama-70b"
+    llama3-8b-8192: "llama3-8b-8192"
+    
+
+# Pricing information (cost per 1,000 tokens in USD)
+
+prices:
+  openai:
+    o3:
+      prompt: 0.010   # was 0.0015
+      completion: 0.040   # was 0.0020
+    4o:
+      prompt: 0.005   # was 0.010
+      completion: 0.020   # was 0.030
+    o4-mini:
+      prompt: 0.0011  # was 0.003
+      completion: 0.0044 # was 0.009
+  groqcloud:
+    llama-3.3-70b-versatile:
+      prompt: 0.00059 # refreshed
+      completion: 0.00079
+    deepseek-r1-distill-llama-70b:
+      prompt: 0.00075 # refreshed
+      completion: 0.00099
+    llama3-8b-8192:
+      prompt: 0.00005  # $0.05/1M tokens
+      completion: 0.00008  # $0.08/1M tokens
+
+# Runtime configuration
+max_retries: 3
+backoff_factor: 2 # seconds
+timeout: 60 # seconds 
