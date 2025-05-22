@@ -1,7 +1,7 @@
 # API Keys - Replace with your own keys
 api_keys:
-  openai: "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"
-  groq: "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"
+  openai: "api key"
+  groq: "api key"
 
 # Model configurations
 models:
